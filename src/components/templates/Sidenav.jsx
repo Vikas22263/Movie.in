@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Sidenav = ({ navactive,func }) => {
-
+const Sidenav = ({ navactive, func }) => {
   return (
     <div
       className=" max-lg:text-lg h-full border-r-2 border-zinc-400 p-10 max-xl:px-6 max-lg:hidden "
@@ -9,6 +8,7 @@ const Sidenav = ({ navactive,func }) => {
         navactive
           ? {
               width: "100vw ",
+              height: "100vh",
               display: "block",
               position: "absolute",
               zIndex: "500",
@@ -25,7 +25,10 @@ const Sidenav = ({ navactive,func }) => {
         {navactive && (
           <span>
             {" "}
-            <i onClick={func} className="text-[#6556CD] hover:text-zinc-500 absolute right-10 text-3xl ri-close-fill cursor-pointer"></i>
+            <i
+              onClick={func}
+              className="text-[#6556CD] hover:text-zinc-500 absolute right-10 text-3xl ri-close-fill cursor-pointer"
+            ></i>
           </span>
         )}
       </h1>

@@ -30,7 +30,7 @@ const Topnav = () => {
           value={query}
           placeholder="Search"
           type="text"
-          className="flex-grow ml-2 p-3 text-xl outline-none border-none bg-transparent"
+          className="flex-grow ml-2 p-3 text-xl outline-none border-none bg-transparent text-white"
         />
         {query.length > 0 && (
           <i

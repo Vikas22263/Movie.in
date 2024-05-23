@@ -4,7 +4,7 @@ import noimage from "../../../images/download.png"
 
 const VerticalCards = ({trending,title}) => {
   return (
-    <div className='flex flex-wrap w-full bg-[#1F1E24] px-6' >
+    <div className='flex flex-wrap w-full bg-[#1F1E24] px-6  justify-evenly' >
         {trending.map((c,i)=>(
           <>
             <Link to={`/${c.media_type || title}/details/${c.id}`} className=' w-[30vh] mr-[5%] mt-2 ' key={i} >

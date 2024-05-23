@@ -15,7 +15,7 @@ const Horizontalcard = ({ trend }) => {
             >
               <div className="w-full">
                 <img
-                  className="w-full h-[40vh]"
+                  className="w-full h-[30vh] object-cover"
                   src={
                     e.backdrop_path || e.poster_path
                       ? `https://image.tmdb.org/t/p/original/${

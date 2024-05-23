@@ -44,14 +44,14 @@ const Home = () => {
 
   document.title = "Movies.in| Homepage";
 
+
+
   return !loading ? (
     <>
       <div
-        className={`w-[20%] h-full max-lg:hidden${
-          navActive ? "absolute z-100 " : " left-0"
-        } `}
+        className={`w-[20%] h-full `}
       >
-        <Sidenav />
+        <Sidenav navactive={navActive} func={()=>setNavactive(prev=>!prev)}/>
       </div>
 
       <div className=" h-full overflow-auto">

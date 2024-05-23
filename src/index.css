@@ -59,3 +59,21 @@ select::-ms-expand{
 .select:hover::after{
     color: #6556cd;
 }
+
+@media(max-width:1080px){
+ 
+    .select{
+        width: 10em;
+    }
+}
+@media (max-width:680px) {
+    .select{
+        width: 5em;
+    }
+}
+@media (max-width:550px) {
+    .select{
+        display: none;
+    }
+    
+}

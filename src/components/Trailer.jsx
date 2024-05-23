@@ -11,7 +11,7 @@ const Trailer = () => {
   const ytvideos = useSelector((state) => state[category].info.videos);
 
   return ytvideos ?(
-    <div className="absolute top-0 left-0 bg-[rgb(0,0,0,0.8)] w-full h-full  ">
+    <div className="absolute top-0 left-0 bg-[rgb(0,0,0,0.8)] w-full h-[100%]  ">
       <div className="h-[50%] flex items-center justify-center mt-12 ">
         <i
           onClick={() => navigate(-1)}

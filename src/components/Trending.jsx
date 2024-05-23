@@ -56,12 +56,12 @@ const Trending = () => {
             onClick={() => navigate(-1)}
             className="mr-2 hover:text-[#6556CD] hover:cursor-pointer ri-arrow-left-line"
           ></i>
-          Trending
+       <span className="max-lg:hidden">Trending</span>
         </h1>
 
         <div className="flex justify-between items-center w-full ml-8">
           <Topnav />
-          <div className="flex max-sm:hidden">
+          <div className="flex ">
             <Dropdown
               title={"Category"}
               options={["tv", "movie", "all"]}

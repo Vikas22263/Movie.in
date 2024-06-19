@@ -5,7 +5,7 @@ const Horizontalcard = ({ trend }) => {
   return (
     <div className="w-full  overflow-x-auto">
       <div className="flex flex-nowrap justify-start">
-        {trend.length > 0 ? (
+        {trend?.length > 0 ? (
           trend.map((e) => (
             <Link
               key={e.id}
